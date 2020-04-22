@@ -5,6 +5,20 @@
 # than or equal to twice the length of the other.
 # Hint: compare the length difference to the length of the smaller string
 
+is_2x_long <- function(a,b)
+{
+  a_len <- nchar(a)
+  b_len <- nchar(b)
+  if(diff(abs(a_len-b_len))>=2*min(a_len,b_len))
+  {
+    print("true")
+  }
+  else
+  {
+    print("false")
+  }
+}
+
 
 # Call your `is_twice_as_long` function by passing it different length strings
 # to confirm that it works. Make sure to check when _either_ argument is twice
